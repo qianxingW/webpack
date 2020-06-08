@@ -2,16 +2,23 @@
 
 let path = require('path');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
-let ExtractTextPlugin = require('extract-text-webpack-plugin');
+// let ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
    devServer: { // 开发服务器配置
-      port: 3000, // 端口
+      port: 3001, // 端口
       progress: true, // 显示进度条
       contentBase: './build', // 配置打开目录
       // open: true // 自动打开
+      proxy: {
+         '/api': {
+            target: 'http://localhost:3000',
+            // pathRewrite: {'^/api': ''}
+         }
+      },
+      hot: true
    },
-   mode: 'development', // development 开发 production 生产
+   mode: 'production', // development 开发 production 生产
    entry: './src/index.js', // 入口文件
    output: { // 打包后文件出口
       filename: 'bundle.js', // 打包文件名称  bundle.[hash:8].js 显示8位
@@ -83,5 +90,17 @@ module.exports = {
             }
          }
       ]
-   }
+   },
+   // 映射文件 方便调试
+   // source-map 生成一个map映射文件 出错时会显示行和列
+   // eval-source-map 不会产生单独文件 出错时会显示行和列
+   // cheap-module-source-map 生成单独文件 但是没有映射
+   // cheap-module-eval-cource-map 不会生成单位文件 会映射 不显示列
+   devtool: 'cheap-module-eval-cource-map',
+   // watch: false, // 实时编译
+   // watchOptions: {
+   //    pol: 1000, // 每秒查询几次
+   //    aggregatetiTimeout: 500, // 防抖
+   //    ignored: /node_modules/, // 不需要监控那个文件
+   // }
 };
