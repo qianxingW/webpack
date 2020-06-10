@@ -77,5 +77,8 @@ module.exports = {
          'never'
       ],
       'func-name-matching': 'error'
+   },
+   parserOptions: {
+      sourceType: 'module'
    }
 };
