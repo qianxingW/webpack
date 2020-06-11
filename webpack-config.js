@@ -75,9 +75,12 @@ module.exports = {
             include: path.resolve(__dirname, 'src') // 包括
          },
          {
-            test: /\/js$/,
+            test: /\.(js|jsx)$/,
             use: {
-               loader: 'babel-loader'
+               loader: 'babel-loader',
+               options: {
+                  presets: ['@babel/preset-react']
+               }
             },
             include: path.resolve(__dirname, 'src'), // 包括
             exclude: /node_modules/ // 排除
@@ -130,7 +133,7 @@ module.exports = {
       // alias: { // 别名
 
       // },
-      extensions: ['.js', 'css', '.json'] // 自动解析扩展 引入时可不写
+      extensions: ['.js', 'css', '.json', '.jsx'] // 自动解析扩展 引入时可不写
    },
 
    // optimization: {

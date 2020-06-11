@@ -1,11 +1,9 @@
 {
   "dependencies": {
-    "-": "^0.0.1",
-    "D": "^1.0.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.3",
-    "eslint": "^7.1.0",
+    "eslint": "^7.2.0",
     "eslint-loader": "^4.0.2",
     "expose-loader": "^0.7.5",
     "file-loader": "^6.0.0",
@@ -22,7 +20,15 @@
     "dev": "webpack-dev-server --config webpack-config.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^3.0.0",
-    "extract-text-webpack-plugin": "^3.0.2"
+    "eslint-plugin-react": "^7.20.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hot-loader": "^4.12.21"
   }
 }

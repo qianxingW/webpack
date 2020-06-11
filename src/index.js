@@ -1,34 +1,22 @@
-require('./index.less');
-// import $ from 'jquery';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { AppContainer } from 'react-hot-loader';
+import App from './components/App.jsx';
 
-import str from './other.js';
- 
-let dasdas = () => {
-   console.log('S');
-};
+console.log(React);
+const render = (Component) => {
+   ReactDOM.render(
+      <AppContainer>
+         <Component/>
+      </AppContainer>,
+      document.getElementById('root')
+   )
+}
 
-// dasdas();
-
-let xhr = new XMLHttpRequest();
-
-xhr.open('GET', '/api/user', true);
-
-xhr.onload = function() {
-   console.log(xhr.response);
-};
-
-xhr.send();
-
-console.log(ENV.NODE_ENV);
-
-// console.log($);
-
-console.log(str);
+render(App);
 
 if(module.hot) {
-   module.hot.accept('./other.js', () => {
-      let str = require('./other.js');
-
-      console.log('更新了', str);
+   module.hot.accept('./components/App.jsx', () => {
+      render(App);
    });
 }
