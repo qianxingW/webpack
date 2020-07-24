@@ -65,6 +65,18 @@
     "@babel/helper-annotate-as-pure" "^7.10.1"
     "@babel/types" "^7.10.1"
 
+"@babel/helper-create-class-features-plugin@^7.10.1":
+  version "7.10.2"
+  resolved "https://registry.npm.taobao.org/@babel/helper-create-class-features-plugin/download/@babel/helper-create-class-features-plugin-7.10.2.tgz?cache=0&sync_timestamp=1590869014139&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fhelper-create-class-features-plugin%2Fdownload%2F%40babel%2Fhelper-create-class-features-plugin-7.10.2.tgz#7474295770f217dbcf288bf7572eb213db46ee67"
+  integrity sha1-dHQpV3DyF9vPKIv3Vy6yE9tG7mc=
+  dependencies:
+    "@babel/helper-function-name" "^7.10.1"
+    "@babel/helper-member-expression-to-functions" "^7.10.1"
+    "@babel/helper-optimise-call-expression" "^7.10.1"
+    "@babel/helper-plugin-utils" "^7.10.1"
+    "@babel/helper-replace-supers" "^7.10.1"
+    "@babel/helper-split-export-declaration" "^7.10.1"
+
 "@babel/helper-function-name@^7.10.1":
   version "7.10.1"
   resolved "https://registry.npm.taobao.org/@babel/helper-function-name/download/@babel/helper-function-name-7.10.1.tgz?cache=0&sync_timestamp=1590617298411&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fhelper-function-name%2Fdownload%2F%40babel%2Fhelper-function-name-7.10.1.tgz#92bd63829bfc9215aca9d9defa85f56b539454f4"
@@ -172,6 +184,14 @@
   version "7.10.2"
   resolved "https://registry.npm.taobao.org/@babel/parser/download/@babel/parser-7.10.2.tgz?cache=0&sync_timestamp=1590869015720&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fparser%2Fdownload%2F%40babel%2Fparser-7.10.2.tgz#871807f10442b92ff97e4783b9b54f6a0ca812d0"
   integrity sha1-hxgH8QRCuS/5fkeDubVPagyoEtA=
+
+"@babel/plugin-proposal-class-properties@^7.10.1":
+  version "7.10.1"
+  resolved "https://registry.npm.taobao.org/@babel/plugin-proposal-class-properties/download/@babel/plugin-proposal-class-properties-7.10.1.tgz?cache=0&sync_timestamp=1590617500094&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fplugin-proposal-class-properties%2Fdownload%2F%40babel%2Fplugin-proposal-class-properties-7.10.1.tgz#046bc7f6550bb08d9bd1d4f060f5f5a4f1087e01"
+  integrity sha1-BGvH9lULsI2b0dTwYPX1pPEIfgE=
+  dependencies:
+    "@babel/helper-create-class-features-plugin" "^7.10.1"
+    "@babel/helper-plugin-utils" "^7.10.1"
 
 "@babel/plugin-syntax-jsx@^7.10.1":
   version "7.10.1"
@@ -2004,6 +2024,21 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
+echarts-for-react@^2.0.16:
+  version "2.0.16"
+  resolved "https://registry.npm.taobao.org/echarts-for-react/download/echarts-for-react-2.0.16.tgz#8134a53dff90882c1e6a95c45ceab21e00f6c9f5"
+  integrity sha1-gTSlPf+QiCweapXEXOqyHgD2yfU=
+  dependencies:
+    fast-deep-equal "^2.0.1"
+    size-sensor "^1.0.0"
+
+echarts@^4.8.0:
+  version "4.8.0"
+  resolved "https://registry.npm.taobao.org/echarts/download/echarts-4.8.0.tgz#b2c1cfb9229b13d368ee104fc8eea600b574d4c4"
+  integrity sha1-ssHPuSKbE9No7hBPyO6mALV01MQ=
+  dependencies:
+    zrender "4.3.1"
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/ee-first/download/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -2437,6 +2472,11 @@ fast-deep-equal@^1.0.0:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/fast-deep-equal/download/fast-deep-equal-1.1.0.tgz?cache=0&sync_timestamp=1591599675178&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffast-deep-equal%2Fdownload%2Ffast-deep-equal-1.1.0.tgz#c053477817c86b51daa853c81e059b733d023614"
   integrity sha1-wFNHeBfIa1HaqFPIHgWbcz0CNhQ=
+
+fast-deep-equal@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/fast-deep-equal/download/fast-deep-equal-2.0.1.tgz?cache=0&sync_timestamp=1591599659970&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffast-deep-equal%2Fdownload%2Ffast-deep-equal-2.0.1.tgz#7b05218ddf9667bf7f370bf7fdb2cb15fdd0aa49"
+  integrity sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
 
 fast-deep-equal@^3.1.1:
   version "3.1.3"
@@ -5255,6 +5295,11 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   resolved "https://registry.npm.taobao.org/signal-exit/download/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
   integrity sha1-oUEMLt2PB3sItOJTyOrPyvBXRhw=
 
+size-sensor@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.npm.taobao.org/size-sensor/download/size-sensor-1.0.1.tgz?cache=0&sync_timestamp=1589882366015&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsize-sensor%2Fdownload%2Fsize-sensor-1.0.1.tgz#f84e46206d3e259faff1d548e4b3beca93219dbb"
+  integrity sha1-+E5GIG0+JZ+v8dVI5LO+ypMhnbs=
+
 slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/slash/download/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
@@ -6244,3 +6289,8 @@ yargs@^13.3.2:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^13.1.2"
+
+zrender@4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npm.taobao.org/zrender/download/zrender-4.3.1.tgz#baf8aa6dc8187a2f819692d7d5f9bedfa2b90fa3"
+  integrity sha1-uviqbcgYei+BlpLX1fm+36K5D6M=
